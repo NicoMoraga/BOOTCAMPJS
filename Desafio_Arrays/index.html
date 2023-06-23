@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//------------ EJERCICIO 1--------------------------------   
+        //Se crea el array
+        var numeros =[1,2,3,4,5,6,7,8,9,10];
+        //Se muestra en consola
+        console.log(numeros);
+
+//------------EJERCICIO 2--------------------------------
+        let amigos = ["pedro","maria","joan","pili"]; 
+
+        var amigosMyJ = []
+        for(var i = 0;i <amigos.length; i++){
+            if(amigos[i] === "maria"  || amigos[i] === "joan"){
+                amigosMyJ.push(amigos[i]);
+            }
+            
+        }
+        console.log("Mis amigos son " + amigosMyJ.join(" y "));
+//----------EJERCICIO 3--------------------------------
+        var meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+        var numMes = parseInt(prompt("Ingresa un nUmero entre 0 y 11:"));
+
+        if (numMes >= 0 && numMes <= 11) {
+            var nombreMes = meses[numMes];
+            console.log("El mes es " + nombreMes );
+        } else {
+        console.log("El numero debe ser entre 0 y 11");
+        }
+//-------EJERCICIO 4----------------------------------------
+        function sumaLista(array){
+            var sum = 0
+            for(var i = 0;i < array.length; i++){
+                sum += array[i];
+            }
+            return sum;
+        }
+        var num = [ 1, 6];
+        var resultado = sumaLista(num);
+        console.log(resultado);
+
+    </script>
+</body>
+</html>

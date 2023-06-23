@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//------------Ejercicio 1----------------------------------
+
+        //aqui creo el objeto persona
+        const persona = {
+          nombre: "Nicolas",
+          apellido: "Moraga",
+          edad: 24,
+          email: "nicomora1998@gmail.com",
+          direccion: "Carlos piña 1368"
+        };
+    
+        // Mostrar los valores en la consola
+        console.log("Nombre: " + persona.nombre);
+        console.log("Apellido: " + persona.apellido);
+        console.log("Edad: " + persona.edad);
+        console.log("Email: " + persona.email);
+        console.log("Dirección: " + persona.direccion);
+
+//-------------Ejercicio 2-----------------------------------------
+
+        // Sr crea la variable alumno
+        const alumno = {
+                nombre: "Nicolas",
+                calificaciones: {
+                    ingles: 2,
+                    programacion: 9,
+                    html: 10
+                }
+            };
+
+        // Se crea la var sum y la cant de materias
+        var sum = 0;
+        var cantMaterias = 0;
+
+        for (var materia in alumno.calificaciones) {
+            sum += alumno.calificaciones[materia];
+            cantMaterias++;
+           }
+
+        var media = sum / cantMaterias;
+
+        // Mostrar el nombre y calificacion por consola
+        console.log("Nombre: " + alumno.nombre);
+        console.log("Media de calificaciones: " + media);
+//------------------------Ejercicio 3--------------------------------------
+
+            const gym = {
+                precio: 24000,
+                dcto: 50,
+                neto: function() {
+                    var pNeto = this.precio - (this.precio * (this.dcto / 100));
+                    return pNeto;
+                }
+            };
+
+            console.log("El precio final es: " + gym.neto());
+    </script>
+</body>
+</html>
