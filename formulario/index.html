@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <legend>Ingresa tus datos</legend>
+    <fieldset>
+    <form id="formm" method="post">
+        <div>
+        <label for="name">Anime favorito:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <div>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        </div>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <div>
+        <label>Invierno o verano:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Invierno</label><br>
+    
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Verano</label><br><br>
+    
+    
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+    
+        <input type="submit" value="Enviar formulario">
+      </form>
+    </fieldset>
+    <script src="js.js"></script>
+</body>
+</html>
